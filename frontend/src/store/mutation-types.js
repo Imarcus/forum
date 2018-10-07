@@ -1,0 +1,6 @@
+export const SET_POSTS = 'SET_POSTS'
+export const SET_THREAD = 'SET_THREAD'
+export const SET_BOARDS = 'SET_BOARDS'
+export const SET_THREADS = 'SET_THREADS'
+export const SET_ALL_THREADS = 'SET_ALL_THREADS'
+export const SET_USER = 'SET_USER'

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "0",
+        "name": "Pengo",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "1",
+        "name": "Smack",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "2",
+        "name": "Peter",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "3",
+        "name": "Alfons",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "4",
+        "name": "Helena",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "5",
+        "name": "Östra",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "6",
+        "name": "Monika",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "7",
+        "name": "Alma",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "8",
+        "name": "Tobias",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    },
+    {
+        "id": "9",
+        "name": "Sjuk",
+        "password": "telia",
+        "noThreads": "2",
+        "noAnswers": "5"
+    }
+]

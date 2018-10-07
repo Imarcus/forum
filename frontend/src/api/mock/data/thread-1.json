@@ -1,0 +1,29 @@
+{
+    "id": "1", 
+    "mainPost": {
+        "title": "Hello title main post",
+        "date": "2018-09-22T07:45:30Z",
+        "content": "Hi I have a main post content right here!",
+        "userId": "1"
+    },
+    "answers": [
+        {
+            "date": "2018-09-22T07:45:30Z",
+            "content": "Hi I have a main comment content right here!",
+            "userId": "2",
+            "id": "1"
+        },
+        {
+            "date": "2018-09-22T07:45:30Z",
+            "content": "Hi I have a main comment content right here!",
+            "userId": "4",
+            "id": "2"
+        },
+        {
+            "date": "2018-09-22T07:45:30Z",
+            "content": "Hi I have a main comment content right here!",
+            "userId": "3",
+            "id": "3"
+        }
+    ]
+}
