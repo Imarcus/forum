@@ -1,6 +1,7 @@
 package com.smack.forum.model;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 public class MainPost extends Post {
@@ -11,6 +12,11 @@ public class MainPost extends Post {
     private String title;
 
     public MainPost() {
+    }
+
+    public MainPost(String content, long userId, Date date, String title) {
+        super(content, userId, date);
+        this.title = title;
     }
 
     public Long getId() {

@@ -1,6 +1,7 @@
 package com.smack.forum.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,9 +14,13 @@ public class Thread {
     private MainPost mainPost;
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Post> answers;
+    private List<Post> answers = new ArrayList<>();
 
     public Thread() {
+    }
+
+    public Thread(MainPost mainPost) {
+        this.mainPost = mainPost;
     }
 
     public Long getId() {

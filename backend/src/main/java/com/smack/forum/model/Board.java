@@ -15,6 +15,10 @@ public class Board {
 
     public Board() {}
 
+    public Board(String name) {
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }

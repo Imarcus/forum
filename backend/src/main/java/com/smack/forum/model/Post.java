@@ -24,6 +24,12 @@ public class Post {
     public Post() {
     }
 
+    public Post(String content, long userId, Date date) {
+        this.content = content;
+        this.userId = userId;
+        this.date = date;
+    }
+
     public Long getId() {
         return id;
     }
