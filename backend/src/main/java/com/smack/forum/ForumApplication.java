@@ -14,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.util.Date;
+import java.util.List;
 
 @SpringBootApplication
 @EnableJpaAuditing
@@ -41,7 +42,7 @@ public class ForumApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		boardRepository.save(new Board("Test board"));
+
 
 		userRepository.save(new ForumUser("Majvor", "mavjor"));
 		userRepository.save(new ForumUser("Elva", "elva"));
@@ -52,6 +53,19 @@ public class ForumApplication implements CommandLineRunner {
 		Post post1 = new Post("läget?", 3L, new Date());
 		thread1.getAnswers().add(post1);
 		threadRepository.save(thread1);
+
+		MainPost mainPost2 = new MainPost("Jag kan inte engelska!", 2L, new Date(), "Hola gringo");
+		Post post2 = new Post("que?", 3L, new Date());
+		Thread thread2 = new Thread(mainPost2);
+		thread1.getAnswers().add(post2);
+		threadRepository.save(thread2);
+
+		Board board1 = new Board("Test board");
+		Board board2 = new Board("En annan board");
+		threadRepository.findAll().forEach(thread -> board1.addThreadId(thread.getId()));
+		threadRepository.findAll().forEach(thread -> board2.addThreadId(thread.getId()));
+		boardRepository.save(board1);
+		boardRepository.save(board2);
 
 		LOG.info("User count in DB: {}", userRepository.count());
 		LOG.info("User with ID 1: {}", userRepository.findById(1L));
